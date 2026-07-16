@@ -21,10 +21,10 @@ export default function Footer() {
           <a href="#faq" className="hover:text-white">
             FAQ
           </a>
-          <a href={PRIVACY_URL} target="_blank" rel="noreferrer" className="hover:text-white">
+          <a href={PRIVACY_URL} className="hover:text-white">
             Privacy
           </a>
-          <a href={TERMS_URL} target="_blank" rel="noreferrer" className="hover:text-white">
+          <a href={TERMS_URL} className="hover:text-white">
             Terms
           </a>
           <a href={SUPPORT_EMAIL} className="hover:text-white">
