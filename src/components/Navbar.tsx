@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import appIcon from '../assets/images/AppIcon.png'
+import { APP_STORE_URL } from '../links'
 
 const links = [
   { label: 'Features', href: '#features' },
@@ -51,7 +52,9 @@ export default function Navbar() {
         </div>
 
         <a
-          href="#download"
+          href={APP_STORE_URL}
+          target="_blank"
+          rel="noreferrer"
           className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition-transform duration-200 hover:scale-105 active:scale-95"
         >
           Get the App

@@ -3,6 +3,7 @@ import { Apple } from 'lucide-react'
 import CosmicGlow from './CosmicGlow'
 import planetPurple from '../assets/images/planet-purple.png'
 import star from '../assets/images/star.png'
+import { APP_STORE_URL } from '../links'
 
 export default function FinalCTA() {
   return (
@@ -64,7 +65,7 @@ export default function FinalCTA() {
           className="mt-9 flex justify-center"
         >
           <a
-            href="https://apps.apple.com/app/id6786825890"
+            href={APP_STORE_URL}
             target="_blank"
             rel="noreferrer"
             className="group flex items-center gap-2 rounded-full bg-white px-8 py-4 font-body text-base font-semibold text-black shadow-[0_10px_50px_-8px_rgba(255,255,255,0.4)] transition-transform duration-200 hover:scale-105 active:scale-95"

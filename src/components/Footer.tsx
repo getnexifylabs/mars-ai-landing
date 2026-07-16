@@ -1,4 +1,5 @@
 import appIcon from '../assets/images/AppIcon.png'
+import { PRIVACY_URL, SUPPORT_EMAIL, TERMS_URL } from '../links'
 
 export default function Footer() {
   return (
@@ -13,14 +14,20 @@ export default function Footer() {
           © {new Date().getFullYear()} Mars AI. Built for students who are done falling behind.
         </p>
 
-        <div className="flex items-center gap-5 font-body text-xs text-white/45">
+        <div className="flex flex-wrap items-center justify-center gap-5 font-body text-xs text-white/45">
           <a href="#features" className="hover:text-white">
             Features
           </a>
           <a href="#faq" className="hover:text-white">
             FAQ
           </a>
-          <a href="mailto:getmarsai@gmail.com" className="hover:text-white">
+          <a href={PRIVACY_URL} target="_blank" rel="noreferrer" className="hover:text-white">
+            Privacy
+          </a>
+          <a href={TERMS_URL} target="_blank" rel="noreferrer" className="hover:text-white">
+            Terms
+          </a>
+          <a href={SUPPORT_EMAIL} className="hover:text-white">
             Contact
           </a>
         </div>

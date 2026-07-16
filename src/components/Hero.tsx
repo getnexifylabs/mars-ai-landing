@@ -6,6 +6,7 @@ import planet1 from '../assets/images/planet-1.png'
 import planetOrange from '../assets/images/planet-orange.png'
 import planetMix from '../assets/images/planet-mix.png'
 import star from '../assets/images/star.png'
+import { APP_STORE_URL } from '../links'
 
 const easeOutSmooth = [0.22, 0.61, 0.36, 1] as const
 
@@ -105,7 +106,9 @@ export default function Hero() {
           className="mt-9 flex flex-col items-center gap-4 sm:flex-row"
         >
           <a
-            href="#download"
+            href={APP_STORE_URL}
+            target="_blank"
+            rel="noreferrer"
             className="group flex items-center gap-2 rounded-full bg-white px-7 py-3.5 font-body text-[15px] font-semibold text-black shadow-[0_10px_40px_-8px_rgba(255,255,255,0.35)] transition-transform duration-200 hover:scale-105 active:scale-95"
           >
             <Apple size={18} className="fill-black" />
