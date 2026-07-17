@@ -1,5 +1,5 @@
 import appIcon from '../assets/images/AppIcon.png'
-import { PRIVACY_URL, SUPPORT_EMAIL, TERMS_URL } from '../links'
+import { CONTACT_URL, PRIVACY_URL, TERMS_URL } from '../links'
 
 export default function Footer() {
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
           <a href={TERMS_URL} className="hover:text-white">
             Terms
           </a>
-          <a href={SUPPORT_EMAIL} className="hover:text-white">
+          <a href={CONTACT_URL} className="hover:text-white">
             Contact
           </a>
         </div>
